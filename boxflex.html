@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Duas divs lado a lado</title>
+
+    <style>
+        /* Contêiner que agrupa as duas caixas */
+        .container {
+            display: flex;          /* coloca os filhos em linha, um ao lado do outro */
+            gap: 10px;              /* espaçamento opcional entre as divs */
+            max-width: 800px;       /* só para limitar a largura total na demonstração */
+            margin: 20px auto;
+        }
+
+        /* Estilo das caixas individuais */
+        .box {
+            flex: 1;                /* cada div ocupa metade do espaço disponível */
+            padding: 20px;
+            border: 1px solid #333;
+            background:#f2f2f2;
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Conteúdo 1</div>
+        <div class="box">Conteúdo 2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>1 coluna + 2 linhas ao lado</title>
+<style>
+    /* -------- CONTÊINER PRINCIPAL -------- */
+    .container {
+        display: flex;          /* coloca filhos lado a lado             */
+        max-width: 900px;       /* apenas para demo; remova se quiser     */
+        margin: 40px auto;
+        gap: 12px;              /* espacinho entre colunas                */
+        font-family: sans-serif;
+    }
+
+    /* -------- COLUNA DA ESQUERDA -------- */
+    .left {
+        flex: 0 0 35%;          /* largura fixa de ±35 %                  */
+        background: #ffe4e1;
+        padding: 20px;
+        box-sizing: border-box; /* inclui padding na largura declarada    */
+    }
+
+    /* -------- COLUNA DA DIREITA -------- */
+    .right {
+        flex: 1;                /* ocupa todo o resto do espaço           */
+        display: flex;          /* vira um novo flex-container            */
+        flex-direction: column; /* agora em COLUNA                        */
+        gap: 12px;              /* espaço entre as duas caixas internas   */
+    }
+
+    /* As duas caixas internas da direita */
+    .right > .box {
+        flex: 1;                /* altura sempre 50 % cada (mesmo peso)   */
+        background: #f0f8ff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <h2>Coluna esquerda</h2>
+        <p>Essa div define a altura total.</p>
+    </div>
+
+    <div class="right">
+        <div class="box">Caixa superior</div>
+        <div class="box">Caixa inferior</div>
+    </div>
+</div>
+
+</body>
+</html>
