@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Tabelas e Formulários</title>
+<link rel="stylesheet" type="text/css" href="style_blue.css">
+</head>
+<body>
+
+<h1>Exemplo: Tabela e Formulário</h1>
+
+<h2>Tabela de Alunos</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Curso</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>João Silva</td>
+        <td>joao.silva@email.com</td>
+        <td>HTML/CSS</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Maria Oliveira</td>
+        <td>maria.oliveira@email.com</td>
+        <td>JavaScript</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Pedro Santos</td>
+        <td>pedro.santos@email.com</td>
+        <td>PHP/MySQL</td>
+    </tr>
+</table>
+
+<h2>Cadastro de Aluno</h2>
+<form action="#" method="post">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="curso">Curso:</label>
+    <select id="curso" name="curso">
+        <option value="html">HTML/CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP/MySQL</option>
+    </select>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+</body>
+</html>
